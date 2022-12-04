@@ -11,6 +11,8 @@ type Props = {
   size?: 'sm' | 'md' | 'lg'
 }
 
+//https://docs.truthordarebot.xyz/api-docs
+
 export default function Button({ children, className, onClick, disabled, type, variant }: Props) {
   if (variant === 'outlined') {
     return (
