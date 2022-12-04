@@ -23,6 +23,9 @@
       "@/components/*": [
         "components/*"
       ],
+      "@/common/*": [
+        "src/common/*"
+      ],
       "@/hooks/*": [
         "src/hooks/*"
       ],
