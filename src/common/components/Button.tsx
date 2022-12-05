@@ -43,7 +43,7 @@ export default function Button({
     return (
       <button
         className={twMerge(
-          'bg-transparent border-2 border-primary-200 font-medium hover:shadow-[6px_6px_0_1px_rgba(243,212,148,1)] transition-shadow duration-200',
+          'bg-transparent border-2 border-primary-200 font-medium hover:shadow-[6px_6px_0_1px_rgba(243,212,148,1)] transition-shadow duration-200 disabled:cursor-not-allowed disabled:opacity-50 disabled:shadow-none disabled:border-primary-200 disabled:text-primary-200 disabled:hover:shadow-none disabled:hover:border-primary-200 disabled:hover:text-primary-200 disabled:hover:bg-transparent',
           getPadding(),
           className
         )}
@@ -58,13 +58,13 @@ export default function Button({
 
   return (
     <button
+      disabled={disabled}
       className={twMerge(
-        'bg-primary-200  border-2 border-primary-200 font-medium hover:shadow-[6px_6px_0_1px_rgba(32,32,32,1)] transition-shadow duration-200 ease-in-out',
+        'bg-primary-200  border-2 border-primary-200 font-medium hover:shadow-[6px_6px_0_1px_rgba(32,32,32,1)] transition-shadow duration-200 ease-in-out disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:shadow-none',
         getPadding(),
         className
       )}
       onClick={onClick}
-      disabled={disabled}
       type={type}
     >
       {children}
