@@ -12,15 +12,18 @@ export default function Header() {
         <p className="text-2xl text-center mt-4">
           Multiplayer game where you have to guess if the statement is true or a lie.
         </p>
-        <div className="flex justify-center mt-8 space-x-4">
-          <Button>Create Game</Button>
-          <Button variant="outlined" onClick={() => setOpen(true)}>
+        <div className="flex items-center justify-center space-x-6 mt-8">
+          <Button size="lg" className="w-44">
+            Create Game
+          </Button>
+          <Button variant="outlined" onClick={() => setOpen(true)} size="lg" className="w-44">
             Join Game
           </Button>
-          <Modal open={open} onClose={() => setOpen(false)}>
-            essasdit byku
-          </Modal>
         </div>
+
+        <Modal open={open} onClose={() => setOpen(false)}>
+          essasdit byku
+        </Modal>
       </div>
     </div>
   )
